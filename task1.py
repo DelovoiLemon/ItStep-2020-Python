@@ -14,6 +14,6 @@ for i in range(n):
     down();
     forward(l);
     right(360/n);
-    up();
-
+    
+up();
 home();
