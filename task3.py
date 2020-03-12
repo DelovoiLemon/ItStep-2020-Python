@@ -46,3 +46,6 @@ up()
 goto(0, height + 10)
 down()
 fill2(width, height)
+
+up()
+home()
