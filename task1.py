@@ -10,8 +10,13 @@ from turtle import*;
 l = 60      # Длина стороны
 n = 0
 
-while(n < 3 or n > 8):
-    n = textinput("Кол-во углов", "Введите кол-во углов от 3 до 8: ")
+while True:
+    try:
+        n = int(textinput("Кол-во углов", "Введите кол-во углов от 3 до 8: "))
+        if(n >= 3 and n <= 8 ):
+            break
+    except:
+        pass
 
 for i in range(n):
     forward(l)
