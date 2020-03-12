@@ -7,13 +7,18 @@
 
 from turtle import*;
 
-n = int(input("Введите  кол-во углов: "));  # Количество углов
-l = 60;                                     # Длина стороны
+l = 60      # Длина стороны
+n = 0
+
+while(n < 3 or n > 8):
+    n = int(input("Введите кол-во углов от 3 до 8: "))
+
+down()
 
 for i in range(n):
-    down();
-    forward(l);
-    right(360/n);
-    
-up();
-home();
+    forward(l)
+    right(360/n)
+
+
+up()
+home()
