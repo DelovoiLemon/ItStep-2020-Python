@@ -8,7 +8,6 @@
 from turtle import*;
 
 l = 60      # Длина стороны
-n = 0
 
 while True:
     try:
